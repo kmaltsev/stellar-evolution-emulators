@@ -16,7 +16,8 @@ The *deep_learning_model_training.ipynb* Notebook is a tutorial-style demonstrat
 
 The last two Notebooks could serve as templates for future work on stellar evolution surrogate modeling. 
 
-**Package requirements:**
+## **Package requirements:**
+
 In order to run the *stellar_evolution_emulators.ipynb*, you will need the following Python packages:
 - scikit-learn version >= 1.3.0
 - tensorflow version >= 2.5.0
