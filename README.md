@@ -10,15 +10,16 @@ The *HNNI.ipynb* Notebook contains the *Hierarchical Nearest-Neighbor Interpolat
 
 Both the machine-learning based surrogate models and HNNI are developed in [Maltsev et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M/abstract).
 
-The *ML-two-step-pipeline.ipynb* Notebook is a tutorial on how to use supervised learning to construct surrogate models of stellar evolution. It covers basic topics such as the regression problem formulation, performance scoring, data visualization, model selection and hyperparameter optimization. For simplicity, only non- deep learning models are used here (*Random Forest* and *k-nearest neighbor* regression models).
+The *ML-two-step-pipeline.ipynb* Notebook is a tutorial on how to use supervised machine learning to construct surrogate models of stellar evolution. It covers basic topics such as the regression problem formulation, performance scoring, data visualization, model selection and hyperparameter optimization. For simplicity, only non-deep learning models are used here (*Random Forest* and *k-nearest neighbor* regression models).
 
-The *deep_learning_model_training.ipynb* Notebook is a tutorial-style demonstration how to construct a deep-learning based surrogate model of stellar evolution using *TensorFlow*. Here, we train a feedforward neural network architecture on the MIST catalog and track its learning in real-time using the *Tensorboard* callback. 
+The *deep_learning_model_training.ipynb* Notebook is a tutorial-style demonstration how to construct a deep-learning based surrogate model of stellar evolution using the *TensorFlow* package. Here, we train a feedforward neural network architecture on the MIST catalog and track its learning in real-time using the *Tensorboard* callback. 
 
 The last two Notebooks could serve as templates for future work on stellar evolution surrogate modeling. 
 
 ## **Package requirements:**
+The following Python packages are required to run these Notebooks:
 
-In order to run the *stellar_evolution_emulators.ipynb*, you will need the following Python packages:
+*stellar_evolution_emulators.ipynb*:
 - scikit-learn version >= 1.3.0
 - tensorflow version >= 2.5.0
 - pickle
@@ -27,7 +28,7 @@ In order to run the *stellar_evolution_emulators.ipynb*, you will need the follo
 - pandas
 - datetime
 
-In order to run *HNNI.ipynb*, you will need only the following very basic packages:
+*HNNI.ipynb*:
 - pandas
 - numpy
 - datetime
@@ -36,4 +37,5 @@ In order to run *HNNI.ipynb*, you will need only the following very basic packag
 - scikit-learn
 - matplotlib
 
-In order to run *deep_learning_model_training.ipynb*, 
+*deep_learning_model_training.ipynb*:
+(...)
