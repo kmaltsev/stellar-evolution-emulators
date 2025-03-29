@@ -31,14 +31,14 @@ The following Python packages are required to run these Notebooks:
 The *stellar-evolution-emulator-fitted-models.ipynb* Notebook runs without the need to access any stellar evolution catalog data base. In order to make predictions of stellar evolution tracks, the pre-trained models stored in the "/models/..." directory need to be loaded instead.
 
 The *HNNI* algorithm requires access to the stellar evolution catalog data base. In the *HNNI.ipynb* Notebook, we use the MIST catalog. Due to file size limitations on GitHub, we have not uploaded the relevant catalog data into this repository. In order to reproduce the results and plots in the Notebook, you will need to proceed as follows:
-1. download the MIST EEP tracks for v/vcrit=0.0 and [Fe/H]=+0.00 from the [MIST packaged model grid data base](https://waps.cfa.harvard.edu/MIST/model_grids.html#eeps). Verify that the downloaded directory is "Fe-H0.0vvcrit0.0".
-2. After you git clone this repository, move the downloaded MIST EEP files into the "data/MIST" directory.
+1. download the MIST EEP tracks for **v/vcrit=0.0** and **[Fe/H]=+0.00** from the [MIST packaged model grid data base](https://waps.cfa.harvard.edu/MIST/model_grids.html#eeps). Verify that the downloaded directory is named "Fe-H0.0vvcrit0.0".
+2. After you git clone this repository, unpack and move the downloaded MIST EEP files into the "data/MIST" directory.
 3. Furthermore, you will also need to create and download additional EEP tracks for the same parameters using the [MIST Web Interpolator](https://waps.cfa.harvard.edu/MIST/interp_tracks.html), for two lists of (ZAMS) masses: those listed in the "data/name-massWebInt.xlsx" and in the "data/name-massTest.xlsx" files. These will be used as additional catalog data and as test data, respectively.
 4. Integrate these three data sets into the "data/MIST" directory.
    
 However, instead of reproducing the MIST example you might also want to directly proceed with your own stellar evolution catalog data base. In that case, 
-1. Modify the data directory path in the *HNNI_routines.py*,
-2. Either modify the MIST_data_reader() function (defined in *processing_and_plot_routines.py* script) for reading in your catalog data set,
+1. modify the data directory path in the *HNNI_routines.py* script,
+2. either modify the MIST_data_reader() function (defined in *processing_and_plot_routines.py* script) for reading in your catalog data set,
    or replace cell 20 in the Notebook altogether by your own wrapper function for reading in your data set.
 3. For compatibility with the scripts used here, make sure your catalog data is casted into the data frame format as the *catalog_data* dictionary in the Notebook example, 
 
