@@ -42,5 +42,5 @@ However, instead of reproducing the MIST example you might also want to directly
    or replace cell 20 in the Notebook altogether by your own wrapper function for reading in your data set.
 3. For compatibility with the scripts used here, make sure your catalog data is casted into the data frame format as the *catalog_data* dictionary in the Notebook example, 
 
-## Questions:**
+## **Questions:**
 Contact me if you have any questions or something does not work: kiril.maltsev@h-its.org
