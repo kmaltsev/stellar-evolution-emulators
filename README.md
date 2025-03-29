@@ -38,7 +38,7 @@ The *HNNI* algorithm requires access to the stellar evolution catalog data base.
    
 However, instead of reproducing the MIST example you might also want to directly proceed with your own stellar evolution catalog data base. In that case, 
 1. modify the data directory path in the *HNNI_routines.py* script,
-2. either modify the MIST_data_reader() function (defined in *processing_and_plot_routines.py* script) for reading in your catalog data set,
+2. either modify the MIST_data_reader() function (defined in the *processing_and_plot_routines.py* script) for reading in your catalog data set,
    or replace cell 20 in the Notebook altogether by your own wrapper function for reading in your data set.
 3. For compatibility with the scripts used here, make sure your catalog data is casted into the data frame format as the *catalog_data* dictionary in the Notebook example, 
 
