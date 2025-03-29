@@ -8,9 +8,9 @@ import sys
 ####################################################################################################
 
 # paths
-data_path = 'data/Fe-H0.0vvcrit0.0' # original non-rotating solar-metallicity MIST stellar models
-webint_path = 'data/MIST_WebInt_train' # additional tracks generated  using the MIST Web Interpolator
-test_path =  'data/MIST_test' # hold-out stellar tracks for testing the accuracy of HNNI
+data_path = 'data/MIST' # original non-rotating solar-metallicity MIST stellar models
+webint_path = data_path # additional tracks generated  using the MIST Web Interpolator
+test_path =  data_path # hold-out stellar tracks for testing the accuracy of HNNI
 
 import eep_read1
 from processing_and_plot_routines import *
