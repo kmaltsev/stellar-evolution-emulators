@@ -25,8 +25,6 @@ The following Python packages are required to run these Notebooks:
 *HNNI.ipynb*:
 - pandas
 - numpy
-- os
-- sys
 - matplotlib
 
 ## **Stellar evolution catalog data:**
