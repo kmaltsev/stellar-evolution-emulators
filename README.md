@@ -13,7 +13,7 @@ Both the machine-learning based surrogate models and HNNI are developed in [Malt
 ## **Package requirements:**
 The following Python packages are required to run these Notebooks:
 
-*stellar_evolution_emulators.ipynb*:
+*stellar-evolution-emulator-fitted-models.ipynb*:
 - scikit-learn version >= 1.3.0
 - tensorflow version >= 2.5.0
 - pickle
